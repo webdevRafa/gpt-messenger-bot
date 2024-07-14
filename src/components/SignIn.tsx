@@ -13,6 +13,7 @@ const SignIn: React.FC = () => {
         const token = credential?.accessToken;
         // The signed-in user info.
         const user = result.user;
+        console.log(token);
         console.log("User signed in: ", user);
       })
       .catch((error) => {
